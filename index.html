@@ -7,6 +7,7 @@
 
 	<!--stylesheets-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 	<title>Tristen Nollman</title>
 </head>
@@ -30,12 +31,78 @@
 				height: auto;
 				float: right;
 			}
-		</style>
 
+			.top-part{
+				position: relative;
+				text-align: center;
+				max-width: 100%
+			}
+			.centered {
+				  position: absolute;
+				  top: 40%;
+				  left: 50%;
+				  transform: translate(-50%, -100%);
+				}
 
+			.btn-rounded-white{
+				display: inline-block;
+			    color: #C2C2C2;
+			    padding: 15px 25px;
+			    padding-top: 15px;
+			    padding-right: 25px;
+			    padding-bottom: 15px;
+			    padding-left: 25px;
+			    border: none;
+			    transition: .5s ease all;
+			}
+			a{
+				text-decoration: none;
+				background-color: transparent;
+			}
+			a:hover{
+				background-color: white;
+				text-decoration: none;
+				color: black;
+			}
+				
+	</style>
+
+	<!--HEADER-->
 	<header>
-		<img src="Images/test.jpg" class="img-fluid" alt="Responsive image">
+		<!--insert nav here-->
 	</header>
+	<div class="top-part">
+		<img src="Images/test.jpg" class="img-fluid" alt="Responsive image">
+		<div class="centered">
+			<h1>Tristen Nollman</h1>
+			<h2>Electrical Engineering Student</h2>
+			<center>
+				<h4>
+					<a href="https://drive.google.com/file/d/1jS20EExAbv_eDoPC9MyhHPkwdJ1JsP65/view?usp=sharing" class="btn-rounded-white">
+						<i class="fas fa-download"></i>
+						Dowload CV
+					</a>
+
+					&nbsp; &nbsp; &nbsp;
+
+					<a href="https://www.linkedin.com/in/tristen-nollman/" class="btn-rounded-white">
+						<i class="fab fa-linkedin"></i>
+						LinkedIn
+					</a>
+
+					&nbsp; &nbsp; &nbsp;
+
+					<a href="https://github.com/TristenSeth" class="btn-rounded-white">
+						<i class="fab fa-github-square"></i>
+						GitHub
+				</a>
+                           
+				</h4>
+			</center>
+		</div>
+	</div>
+
+
 	<main class="container" style="z-index: 1; position: relative;">
 	<div>
 		
