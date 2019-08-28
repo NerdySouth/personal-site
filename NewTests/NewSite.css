@@ -1,0 +1,42 @@
+.masthead {
+	height: 100vh;
+	min-height: 500px;
+	background-image: url("Test.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+a{
+	text-decoration: none;
+	background-color: transparent;
+}
+
+a:hover{
+	background-color: white;
+	text-decoration: none;
+	color: black;
+}
+
+.btn-rounded-white{
+	display: inline-block;
+    color: #C2C2C2;
+    padding: 15px 25px;
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    border: none;
+    transition: .5s ease all;
+}
+.headshot{
+	display: table-cell;
+	position: relative;
+	background-image: url(Tristen.png) !important;
+	float: left;
+	max-width: 50%;
+	height: auto;
+}
+.description{
+	padding-left: 25px;
+}
