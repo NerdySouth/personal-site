@@ -110,6 +110,9 @@ enableRobotsTXT = true
   ]
 
 [module]
+  [[module.imports]]
+    path = 'github.com/spf13/hyde'
+  
   [module.hugoVersion]
     extended = true
     min = "0.85.0"
