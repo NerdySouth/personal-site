@@ -1,0 +1,132 @@
+baseURL = "https://www.tristen.wtf/"
+title = "Tristen Nollman"
+# author = "Yukuro"
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+canonifyURLs = true
+languageCode = "en-us"
+enableEmoji = true
+enableRobotsTXT = true
+[Params]
+
+# Additions start here
+  [Params.Navbar]
+  use = false
+  
+  [Params.Extensions]
+  use = true
+  ext = ".txt" # extension to add after single page
+# Additions stop here
+    
+  # Note: This is for the meta description, which is different from the "description" displayed in the terminal.
+  description = "Tristen's Personal Site"
+  [Params.Terminal]
+  # Note: color scheme
+  # Note: You can choose between
+  # Note: hugo-theme-shell original: ["shell-powershell", "shell-ubuntu", "shell-retro"]
+  # Note: gogh theme: https://mayccoll.github.io/Gogh/
+  scheme = "Dracula"
+
+  # Note: in terminal
+  # [userName]@[pcName]:~/$ cd [workDir]
+  # [userName]@[pcName]:~/[workDir]$ cat [profile]
+  #
+  # [description]
+  #
+  # Note: if you set Params.Tree > use = true
+  # [userName]@[pcName]:~/[workDir]$ tree ./[folderName]/
+  # ./[folderName]/
+  # ...
+  # Note: result of the tree command
+  userName = "tristen"
+  pcName = "macbook"
+  workDir = "personal-site"
+  profile = "greetings.txt"
+
+  # Note: speed at which text is displayed on the terminal
+  # Note: if set to 0, typing animation will be disabled
+  # Note:
+  # Note: if you want to enable Mathjax, you need to set it to 0
+  # Note: and set "math: true" at front matter in your Markdown file
+  ps1Delay = 0 # prompt speed : [userName]@[pcName]:~/$ , [userName]@[pcName]:~/[workDir]$
+  stdoutDelay = 0 # stdout speed : [description] , files in Params.Tree
+  commandDelay = 25 # command speed : cd [workDir] , cat [profile] , tree ./[folderName]/
+
+  # terminalDelay = 20 : deprecated
+
+  # Note: speed at which text is displayed on the activity pages
+  # Note: if set to 0, typing animation will be disabled
+  # Note: 
+  # Note: if you want to enable Mathjax, you need to set it to 0
+  # Note: and set "math: true" at front matter in your Markdown file
+  titleDelay = 0 # title speed : "title" in front matter
+  contentDelay = 0 # content speed : content in .md file
+
+  # activityDelay = 5 : deprecated
+
+  description = """
+  Hi, my name is Tristen Nollman! I am a senior at Stanford University studying
+  Computer Science 💻, with a focus in Systems and Security🔒. I am currently looking
+  for new graduate positions in software engineering.
+
+  Skills:
+    ⇢  Proficient in Rust 🦀, C, C++, Python3, Cython, Zig
+    ⇢  Familiar with deploying to AWS Lambda via CloudFormation
+    ⇢  Familiar with Google Cloud Platform and Kubernetes
+    ⇢  Familiar with AArch32 and AArch64 platforms, both with linux and bare metal.
+    ⇢  Familiar with common peripheral interfaces such as UART, SPI, I2C, Etc.
+  
+  Checkout my LinkedIn, and CV for more info on my past experience, projects,
+  and open source contributions.
+
+  In my freetime I like to work on Nox, and Zoot, two hobby projects for 
+  learning more about the AArch64 Architecture, as well as novel OS design on 
+  real hardware. I am writing Nox in Rust, and Zoot in Zig, two new systems languages.
+  I really like the idea of pushing as much as we can onto language's like these
+  to ensure correct program behavior within an OS. Check out my blog and my github 
+  for more info! 
+
+  Outside of CS I love to hangout with my two dogs 🐕, watch anime and sci-fi shows🛸,
+  and be out in nature🌿.
+
+  Nice meeting you!
+  Lets me get you some links to check out...  :p 
+  """
+
+  # Note: If you want to use a Markdown file, you can use the following
+  # description = "/description.md"
+  # Note: and put the description.md in /content/description.md
+
+  [Params.Tree]
+  use = true
+  folderName = "Links"
+  # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
+  files = [ 
+    ["Download CV", "https://drive.google.com/uc?export=download&id=1cmfvW4N9hs9GsH9Q7UZGe57wfn9HQ772"],
+    ["LinkedIn", "https://www.linkedin.com/in/tristen-nollman/"],
+    ["Github", "https://www.github.com/TristenSeth"],
+    ["Blog", "https://hax.tristen.wtf"],
+  ]
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.85.0"
+
+[security]
+enableInlineShortcodes = true
+
+[server]
+
+  [[server.headers]]
+  for = "/"
+
+    [server.headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Feature-Policy = "accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' www.google-analytics.com maps.googleapis.com; img-src 'self' www.google-analytics.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com fonts.googleapis.com; font-src 'self' github.com; font-src 'self' render.githubusercontent.com; form-action 'self';"
