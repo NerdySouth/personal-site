@@ -1,5 +1,5 @@
 
-baseURL = "https://www.tristen.wtf"
+baseURL = "http://www.tristen.wtf"
 title = "Tristen Nollman"
 theme = "hugo-coder"
 languageCode = "en"
