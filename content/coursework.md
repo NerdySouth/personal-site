@@ -15,48 +15,22 @@ tags = [
 Below is a comprehensive list of technical courses I have completed during my B.S. and M.S. in Computer Science at Stanford. Each course includes a brief description and a list of topics the course covered.
 
 ## Misc. Courses
-{{< course ENGR40M>}}
+{{< course ENGR40M >}}
 
-***Topics*** Circuit analysis, basic circuit debugging, basic analog filters
+{{< course CS41 >}}
 
-### CS41: HAP.PY code: The python programming language
-This was a fun little 2-unit class on python, which really helped me early in my CS career. We went over all sorts of language features, and did fun little assignments for them and a final project. My project was a script that could automatically order your favorite pizzas from Domino's.
+{{< course CS45 >}}
 
-***Topics:*** Python basics, data structures, functions, functional programming, web scraping, NumPy, Stadard Library, Machine learning, matplotlib
+{{< course CS106L >}}
 
-### CS45: Software Tools Every Developer Should Know
-This was a cool 2-unit class that surveyed some common tools you should really know as a developer, but that classes never really teach you. Even though you likely need these tools for class, like make or cmake, how to edit remote files in vim, how to use docker and CI/CD pipelines, etc.
-
-Topics: Build systems, shells, terminals, containers, continuous integration, debuggers, unix tools
-
-### CS110L: Safety in Systems Programming
-This course was basically an intro to Rust. We learned some general pitfalls of systems programming, and how Rust tries to solve them, or makes them worse. We went over debugging tools for systems projects, such as LLDB and GDB, Valgrind, etc. Ultimately, we built projects in Rust from the Rust book. Specifically, a multithreaded web-server.
-
-***Topics:*** Rust, GDB, LLDB, Valgrind, LLVM
+{{< course CS110L >}}
 
 ## Core Courses
 
-### CS103: 	Mathematical Foundations of Computing
-This class covers both an intro to discreet math, as well as an intro to computational theory. We covered basic proof writing, then moved quickly onto proving things about sets, grammars, languages, DFA/NFA's, and graphs. It was easily one of the toughest classes in my time at Stanford, and I had to withdraw the first time I enrolled in it. 
+{{< course CS103 >}}
 
-**Topics:** Direct, indirect, and basic inductive proof writing, propositional logic, first-order logic, functions, graphs, finite automata, regular expressions, languages, turing machines, P and NP.
-
-### CS106B: Programming Abstractions
-This class focuses on teaching the foundations for data structure use, and algorithmic implementation. It builds on top of basic fundementals such as control flow, loops, etc from CS106A, but introduced topics like recursion, recursive backtracking, and graph algorithms. This class was fun, since the assignments always made us do something fun like solve boggle, or implement a GPS with path finding algorithms.
-
-**Topics:** Intro data structures, Intro time complexity, Intro pointers, Intro algorithms
-
-### CS106L: Standard C++ Programming Laboratory
-This 1-unit class focused on learning the standard library for modern C++. We went over many things like iterators, templates, the "algorithm" headers, and more. It was a chill class, and I enjoyed it a lot. It definitely helped me a lot in later systems classes that used regular C++ more, since CS106B used Stanford's special C++ libraries.
-
-***Topics:*** C++17 STD library features
-
-### CS107: Computer Organization and Systems
-This was my favorite core class of the 6 (103, 106B, 107, 109, 110 (now 111), 161). It boosted my confidence in CS at Stanford, despite hearing the opposite from pretty much all of my classmates. It is a notoriously hard class with two infamous assignments: binary bomp and heap allocator. I found both really fun, which is what made me continue trying out systems classes, and eventually pursure a systems focus.
-
-This is the first systems class in the CS deptartment, and is required by all CS majors. 
-
-***Topics:*** Integer representations, Bits, chars and C-strings, arrays, pointers, stack vs heap, void pointers, floating point numbers, x86 assembly
+{{< course CS106B >}}
+{{< course CS107 >}}
 
 ### CS109: Introduction to Probability for Computer Scientists
 This was another really challenging class for me, since the math got pretty hard to follow toward the end of the 10 week quarter. However, it was super fun working on the problem sets and seeing all the different ways you could apply basic probability principles to solve novel problems around us. The last two assignments had us implment some basic machine learning stuff with MAP and MLE.
