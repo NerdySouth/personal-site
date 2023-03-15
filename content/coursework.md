@@ -16,8 +16,6 @@ Below is a comprehensive list of technical courses I have completed during my B.
 
 ## Misc. Courses
 {{< course ENGR40M>}}
-### ENGR40M: Intro to Making: What is EE?
-This class was super fun my freshman year. It covered basic (and to me, advanced) circuit designs. We began with the basics, and built up to analog filtering. We built serveral projects, including a solar powered portable battery bank, a useless box powered by an ardino uno, an LED matrix powered with an ardunio, and an ECG/EKG circuit to measure our own heart rate. The lab projects were super fun to implement, and learning to solder and use tools like oscilliscopes was very rewarding, and definitely useful in my personal projects like the custom keyboard.
 
 ***Topics*** Circuit analysis, basic circuit debugging, basic analog filters
 
