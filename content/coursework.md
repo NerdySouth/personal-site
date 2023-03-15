@@ -7,8 +7,10 @@ tags = [
     "edu",
 ]
 +++
-# **Nav**
+# **By Course Level**
 [Misc](#misc-courses) | [Core](#core-courses) | [100-level courses](#100-level-courses) | [200-level courses](#200-level-courses) | [300-level courses](#300-level-courses)
+
+# **By Course topics**
 
 Below is a comprehensive list of technical courses I have completed during my B.S. and M.S. in Computer Science at Stanford. Each course includes a brief description and a list of topics the course covered.
 
