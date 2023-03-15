@@ -1,0 +1,17 @@
+<div id="course">
+    <script type="text/javascript" src="/js/courses.js"></script>
+    <script type="application/json" src="/js/courses.json"></script>
+    <h3 id="title"></h3>
+    <p id="desc"></p>
+    <em><b>Topics:</b></em><p id="topics"></p>
+
+    <script type="text/javascript">
+        getCourses().then((courses) => {
+            let course = getCourseById(courses, "{{ index .Params 0 }}");
+            console.log(course);
+            document.getElementById('title').innerText = course.code + ": " + course.title;
+            document.getElementById('desc').innerText = course.desc;
+            document.getElementById('topics').innerText += course.topics;
+        });
+    </script>
+</div>
