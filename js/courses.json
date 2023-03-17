@@ -1,0 +1,118 @@
+{
+    "courses": [
+        {
+            "code": "ENGR40M",
+            "title": "Intro to Making: What is EE?",
+            "desc": "This class was super fun my freshman year. It covered basic (and to me, advanced) circuit designs. We began with the basics, and built up to analog filtering. We built serveral projects, including a solar powered portable battery bank, a useless box powered by an ardino uno, an LED matrix powered with an ardunio, and an ECG/EKG circuit to measure our own heart rate. The lab projects were super fun to implement, and learning to solder and use tools like oscilliscopes was very rewarding, and definitely useful in my personal projects like the custom keyboard.",
+            "topics": [
+                "Circuit analysis", 
+                "basic circuit debugging",
+                "basic analog filters"
+            ]
+        },
+        {
+            "code": "CS41",
+            "title": "HAP.PY code: The python programming language",
+            "desc": "This was a fun little 2-unit class on python, which really helped me early in my CS career. We went over all sorts of language features, and did fun little assignments for them and a final project. My project was a script that could automatically order your favorite pizzas from Domino's.",
+            "topics": [
+                "Python basics", 
+                "Data structures", 
+                "functional programming", 
+                "web scraping", 
+                "NumPy",
+                "STL", 
+                "matplotlib", 
+                "basic ML libraries"
+            ]
+        },
+        {
+            "code": "CS45",
+            "title": "Software Tools Every Developer Should Know",
+            "desc": "This was a cool 2-unit class that surveyed some common tools you should really know as a developer, but that classes never really teach you. Even though you likely need these tools for class, like make or cmake, how to edit remote files in vim, how to use docker and CI/CD pipelines, etc.",
+            "topics": [
+                "Build Systems (Make, ninja)", 
+                "Shells", 
+                "Terminal Emulators", 
+                "Containers", 
+                "Continuous Integration",
+                "Debuggers", 
+                "Unix Image & Video tools"
+            ]
+        },
+        {
+            "code": "CS106L",
+            "title": "Stanard C++ Programming Lab",
+            "desc": "This 1-unit class focused on learning the standard library for modern C++. We went over many things like iterators, templates, the \"algorithm\" headers, and more. It was a chill class, and I enjoyed it a lot. It definitely helped me a lot in later systems classes that used regular C++ more, since CS106B used Stanford's special C++ libraries.",
+            "topics": [
+                "C++ STL Features" 
+            ]
+        },
+        {
+            "code": "CS110L",
+            "title": "Saftey in Systems Programming",
+            "desc": "This course was basically an intro to Rust. We learned some general pitfalls of systems programming, and how Rust tries to solve them, or makes them worse. We went over debugging tools for systems projects, such as LLDB and GDB, Valgrind, etc. Ultimately, we built projects in Rust from the Rust book. Specifically, a multithreaded web-server.",
+            "topics": [
+                "Rust", 
+                "GDB", 
+                "LLDB", 
+                "Valgrind", 
+                "LLVM Sanitizers"
+            ]
+        },
+        {
+            "code": "CS103",
+            "title": "Mathematical Foundations of Computing",
+            "desc": "This class covers both an intro to discreet math, as well as an intro to computational theory. We covered basic proof writing, then moved quickly onto proving things about sets, grammars, languages, DFA/NFA's, and graphs. It was easily one of the toughest classes in my time at Stanford, and I had to withdraw the first time I enrolled in it. ",
+            "topics": [
+                "Proof-writing", 
+                "Induction", 
+                "Propositional logic", 
+                "First-order logic", 
+                "Functions",
+                "Graphs",
+                "Finite Automata",
+                "Regular Expressions",
+                "Languages & Grammars",
+                "Turing Machines",
+                "P vs NP"
+            ]
+        },
+        {
+            "code": "CS106B",
+            "title": "Programming Abstractions",
+            "desc": "This class focuses on teaching the foundations for data structure use, and algorithmic implementation. It builds on top of basic fundementals such as control flow, loops, etc from CS106A, but introduced topics like recursion, recursive backtracking, and graph algorithms. This class was fun, since the assignments always made us do something fun like solve boggle, or implement a GPS with path finding algorithms.",
+            "topics": [
+                "Stacks", 
+                "Queues", 
+                "BST's", 
+                "Heaps", 
+                "Recursion",
+                "Recursive Backtracking",
+                "Time complexity",
+                "Basic pointers",
+                "Linked-lists",
+                "HashMaps"
+            ]
+        },
+        {
+            "code": "CS107",
+            "title": "Computer Organization and Systems",
+            "desc": "This was my favorite core class of the 6 (103, 106B, 107, 109, 110 (now 111), 161). It boosted my confidence in CS at Stanford, despite hearing the opposite from pretty much all of my classmates. It is a notoriously hard class with two infamous assignments: binary bomp and heap allocator. I found both really fun, which is what made me continue trying out systems classes, and eventually pursure a systems focus.\nThis is the first systems class in the CS core.",
+            "topics": [
+                "Integer representation", 
+                "Bits", 
+                "chars", 
+                "C-strings", 
+                "Points vs Arrays",
+                "Stack vs Heap",
+                "NULL and void pointers",
+                "Floating-point representation",
+                "x86-64 Assembly",
+                "Heap allocation"
+            ]
+        }
+    ]
+}
+
+
+
