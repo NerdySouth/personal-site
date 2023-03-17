@@ -30,6 +30,7 @@ Below is a comprehensive list of technical courses I have completed during my B.
 {{< course CS103 >}}
 
 {{< course CS106B >}}
+
 {{< course CS107 >}}
 
 ### CS109: Introduction to Probability for Computer Scientists
